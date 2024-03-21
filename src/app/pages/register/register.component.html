@@ -1,0 +1,47 @@
+
+            <div class="container">
+                <mat-card>
+                    <mat-card-content>
+                        <div>
+                            <form class="login-form">
+                            <mat-card-title>Cadastre-se</mat-card-title>
+
+                            <mat-form-field>
+
+                                <mat-label>Nome</mat-label>
+                                <input required name="name" matInput placeholder="Nome" [(ngModel)]="username">
+                            </mat-form-field>
+            
+                            <mat-form-field>
+                                <mat-label>CPF</mat-label>
+                                <input required type="cpf" name="Cpf" matInput placeholder="CPF" [(ngModel)]="cpf">
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>Data de Nascimento</mat-label>
+                                <input required type="date" name="date" matInput placeholder="Data de Nascimento" [(ngModel)]="date">
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>E-mail</mat-label>
+                                <input required type="email" name="email" matInput placeholder="E-mail" [(ngModel)]="email">
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>Senha</mat-label>
+                                <input required type="password" name="passwordApp" matInput placeholder="Senha" [(ngModel)]="password">
+                            </mat-form-field>
+            
+                            <span>
+                                {{mensagemRegister}}
+                            </span>
+                        </form>
+                            <button (click)="btnRegister()" mat-raised-button color="primary" type="submit">Confirmar</button>
+                        
+                        
+                    </div>
+                    </mat-card-content>
+            
+                </mat-card>
+            </div>
+                

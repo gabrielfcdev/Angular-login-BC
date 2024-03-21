@@ -1,0 +1,34 @@
+
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  mat-icon {
+    font-size: 1.5em;
+  }
+  
+  .brand {
+    text-align:right;
+    font-size: 1.5em;
+  }
+  
+  .example-sidenav {
+    width: 200px;
+  }
+  
+  mat-list-item {
+    text-align: left;
+    
+    transition: background-color 0.3s;
+  }
+  
+  mat-list-item:hover {
+    background-color: #eee;
+  }
+  
+  .example-sidenav-content {
+    padding: 20px;
+  }
+  

@@ -1,0 +1,28 @@
+
+<div class="container">
+   <mat-card>
+    <mat-card-title>Entre em contato</mat-card-title>
+    <mat-card-content>
+        <div>
+            <mat-form-field>
+                <mat-label>Nome</mat-label>
+                <input required [(ngModel)]="nome" name="nome" matInput placeholder="Informe seu nome">
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>E-mail</mat-label>
+                <input required [(ngModel)] ="email" name="email" type="email" placeholder="Informe um E-mail" matInput>
+              </mat-form-field>
+
+              <mat-form-field>
+                <mat-label>Mensagem</mat-label>
+                <textarea [(ngModel)]="mensagem" name="mensagem" matInput placeholder="Mensagem"></textarea>
+              </mat-form-field>
+              <button mat-raised-button (click)="btnEnviarFormulario()" color="primary">Enviar</button>
+
+            </div>
+       
+    </mat-card-content>
+
+   </mat-card>
+</div>

@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button color="accent" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="brand">Banco Horizon</span>
+  <span class="material-symbols-outlined">
+    account_circle
+    </span>
+</mat-toolbar>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <!-- Lista do menu -->
+    <mat-list>
+      <mat-list-item (click)="drawer.toggle()" routerLink="home" role="listitem">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        <span>Home</span>
+      </mat-list-item>
+      <mat-list-item (click)="drawer.toggle()" routerLink="contact" role="listitem">
+        <mat-icon aria-hidden="false" aria-label="Example call icon" fontIcon="call"></mat-icon>
+        <span>Contact</span>
+      </mat-list-item>
+      <mat-list-item (click)="drawer.toggle()" routerLink="login" role="listitem">
+        <mat-icon aria-hidden="false" aria-label="Login" fontIcon="login"></mat-icon>
+        <span>Login</span>
+      </mat-list-item>
+      <mat-list-item (click)="drawer.toggle()" routerLink="register" role="listitem">
+        <mat-icon aria-hidden="false" aria-label="register" fontIcon="how_to_reg"></mat-icon>
+        <span>Register</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
