@@ -3,4 +3,6 @@ footer {
     color: #f50000;
     padding: 20px;
     text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
 }
